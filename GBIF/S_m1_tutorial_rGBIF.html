@@ -183,7 +183,7 @@ pre code {
 </div>
 
 <p><em>rgbif</em> es un paquete de R para buscar y recuperar datos del Global Biodiverity Information Facilty (GBIF).</p>
-<p>[<a href="https://docs.ropensci.org/rgbif/" class="uri">https://docs.ropensci.org/rgbif/</a>] <a href="https://docs.ropensci.org/rgbif/" class="uri">https://docs.ropensci.org/rgbif/</a> [<a href="https://github.com/ropensci/rgbif/" class="uri">https://github.com/ropensci/rgbif/</a>] <a href="https://github.com/ropensci/rgbif/" class="uri">https://github.com/ropensci/rgbif/</a></p>
+<p><a href="https://docs.ropensci.org/rgbif/" class="uri">https://docs.ropensci.org/rgbif/</a> <a href="https://github.com/ropensci/rgbif/" class="uri">https://github.com/ropensci/rgbif/</a></p>
 <div id="preparación-sesión" class="section level2">
 <h2>1. Preparación sesión</h2>
 <p>Instalar rgbif desde CRAN</p>
@@ -231,937 +231,23 @@ names(tax)</code></pre>
 #   numOccurrences &lt;int&gt;, habitats &lt;chr&gt;, nomenclaturalStatus &lt;chr&gt;,
 #   threatStatuses &lt;chr&gt;, synonym &lt;lgl&gt;, class &lt;chr&gt;, order &lt;chr&gt;,
 #   family &lt;chr&gt;, orderKey &lt;int&gt;, familyKey &lt;int&gt;, taxonID &lt;chr&gt;, ...</code></pre>
-<table style="width:100%;">
-<caption>Tabla con algunos campos importantes</caption>
-<colgroup>
-<col width="4%" />
-<col width="31%" />
-<col width="15%" />
-<col width="6%" />
-<col width="13%" />
-<col width="11%" />
-<col width="8%" />
-<col width="6%" />
-<col width="3%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="right">key</th>
-<th align="left">scientificName</th>
-<th align="left">datasetKey</th>
-<th align="left">genus</th>
-<th align="left">species</th>
-<th align="left">canonicalName</th>
-<th align="left">taxonomicStatus</th>
-<th align="right">numOccurrences</th>
-<th align="left">synonym</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">145954271</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">3f5e930b-52a5-461d-87ec-26ecd66f14a3</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">178920114</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">6b6b2923-0a10-4708-b170-5b7c611aceef</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">103018874</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">fab88965-e69d-4491-a04d-e3198b626e52</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">180134137</td>
-<td align="left">Cedrus atlantica (Endl.) Carrière</td>
-<td align="left">dbaa27eb-29e7-4cbb-8eab-3f689cfce116</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">8074435</td>
-<td align="left">Cedrus atlantica G.Manetti, 1845</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">DOUBTFUL</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">127710596</td>
-<td align="left">Cedrus atlantica (Endl.) Carrière</td>
-<td align="left">91bc4859-05a8-43d1-8bf2-cf2bfde4b22d</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">SYNONYM</td>
-<td align="right">0</td>
-<td align="left">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="right">131817678</td>
-<td align="left">Cedrus atlantica (Endl.) Carrière</td>
-<td align="left">91bc4859-05a8-43d1-8bf2-cf2bfde4b22d</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">DOUBTFUL</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">127697674</td>
-<td align="left">Cedrus atlantica (Endl.) Carrière</td>
-<td align="left">91fecd78-0986-4713-9c36-77532846ee25</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">105340171</td>
-<td align="left">Cedrus atlantica G.Manetti, 1845</td>
-<td align="left">046bbc50-cae2-47ff-aa43-729fbf53f7c5</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">180134154</td>
-<td align="left">Cedrus atlantica (Endl.) Carriere</td>
-<td align="left">dbaa27eb-29e7-4cbb-8eab-3f689cfce116</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">SYNONYM</td>
-<td align="right">0</td>
-<td align="left">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="right">10152153</td>
-<td align="left">Cedrus atlantica x Cedrus libani</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica x Cedrus libani</td>
-<td align="left">NA</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">161118934</td>
-<td align="left">Cedrus atlantica x Cedrus libani</td>
-<td align="left">0e61f8fe-7d25-4f81-ada7-d970bbb2c6d6</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica x Cedrus libani</td>
-<td align="left">NA</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">168420551</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carrière</td>
-<td align="left">aacd816d-662c-49d2-ad1a-97e66e2a2908</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">161118923</td>
-<td align="left">Cedrus atlantica (Manetti ex Endl.) Carrière, 1855</td>
-<td align="left">0e61f8fe-7d25-4f81-ada7-d970bbb2c6d6</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">100358882</td>
-<td align="left">Cedrus atlantica (Endl.) G.Manetti ex Carrière</td>
-<td align="left">16c3f9cb-4b19-4553-ac8e-ebb90003aa02</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">118230773</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carrière</td>
-<td align="left">d9a4eedb-e985-4456-ad46-3df8472e00e8</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">5284702</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">160904594</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">acaa145f-7944-4bc8-a4cc-4e3410c41e99</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">148733110</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">61b67ae8-c623-42a9-9172-3283f2f1473b</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">159500256</td>
-<td align="left">Cedrus atlantica (Manetti ex Endl.) Carrière</td>
-<td align="left">39f36f10-559b-427f-8c86-2d28afff68ca</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">168083261</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carrière</td>
-<td align="left">a6c6cead-b5ce-4a4e-8cf5-1542ba708dec</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">148720195</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">f6ae66a3-f267-4d03-8541-fdfa7ffc9eaf</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">169977462</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carrière</td>
-<td align="left">f382f0ce-323a-4091-bb9f-add557f3a9a2</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">148792230</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">692a0aec-70e2-4038-ac9c-9a1d7acc025f</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">186623538</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carrière</td>
-<td align="left">bae5856f-da10-4333-90a0-5a2135361b30</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">163313866</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">6dc163b3-79fb-4090-9dc9-0730d630bc91</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">134856616</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">278c9199-be97-4fd0-9c6c-6c46c4e2369e</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">160947464</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">72e7aab4-aa85-4fcf-b95e-3d835d3e408a</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">176754939</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carrière</td>
-<td align="left">19491596-35ae-4a91-9a98-85cf505f1bd3</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">160252179</td>
-<td align="left">Cedrus atlantica (Endl.) G.Manetti ex Carrière, 1855</td>
-<td align="left">046bbc50-cae2-47ff-aa43-729fbf53f7c5</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">101400685</td>
-<td align="left">Cedrus atlantica (Endl.) G.Manetti ex Carriere</td>
-<td align="left">66dd0960-2d7d-46ee-a491-87b9adcfe7b1</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">175152676</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">7ddf754f-d193-4cc9-b351-99906754a03b</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">152470517</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carri?re</td>
-<td align="left">4dd32523-a3a3-43b7-84df-4cda02f15cf7</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">134853433</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carriere</td>
-<td align="left">f82a4f7f-6f84-4b58-82e6-6b41ec9a1f49</td>
-<td align="left">NA</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">165638252</td>
-<td align="left">Cedrus atlantica (Endl.) Manetti ex Carrière</td>
-<td align="left">cbb6498e-8927-405a-916b-576d00a6289b</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">Cedrus atlantica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">185471635</td>
-<td align="left">Carulaspis juniperi (Bouche 1851)</td>
-<td align="left">a8118ca5-6988-4abd-8bb7-f0ef0020a93f</td>
-<td align="left">Carulaspis</td>
-<td align="left">Carulaspis juniperi</td>
-<td align="left">Carulaspis juniperi</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">165696250</td>
-<td align="left">Lozotaenia cedrivora</td>
-<td align="left">cbb6498e-8927-405a-916b-576d00a6289b</td>
-<td align="left">Lozotaenia</td>
-<td align="left">Lozotaenia cedrivora</td>
-<td align="left">Lozotaenia cedrivora</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">165798805</td>
-<td align="left">Epinotia algeriensis</td>
-<td align="left">cbb6498e-8927-405a-916b-576d00a6289b</td>
-<td align="left">NA</td>
-<td align="left">Epinotia algeriensis</td>
-<td align="left">Epinotia algeriensis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">165795978</td>
-<td align="left">Dioryctria peltieri de Joannis, 1908</td>
-<td align="left">cbb6498e-8927-405a-916b-576d00a6289b</td>
-<td align="left">NA</td>
-<td align="left">Dioryctria peltieri</td>
-<td align="left">Dioryctria peltieri</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">8218672</td>
-<td align="left">Carulaspis juniperi (Bouché, 1851)</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Carulaspis</td>
-<td align="left">Carulaspis juniperi</td>
-<td align="left">Carulaspis juniperi</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">165383851</td>
-<td align="left">Pogonocherus cedri Peyerimhoff, 1916</td>
-<td align="left">cbb6498e-8927-405a-916b-576d00a6289b</td>
-<td align="left">Pogonocherus</td>
-<td align="left">Pogonocherus cedri</td>
-<td align="left">Pogonocherus cedri</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">165795980</td>
-<td align="left">Dioryctria peyerimhoffi de Joannis, 1921</td>
-<td align="left">cbb6498e-8927-405a-916b-576d00a6289b</td>
-<td align="left">NA</td>
-<td align="left">Dioryctria peyerimhoffi</td>
-<td align="left">Dioryctria peyerimhoffi</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">165321348</td>
-<td align="left">Epinotia cedricida Diakonoff, 1969</td>
-<td align="left">cbb6498e-8927-405a-916b-576d00a6289b</td>
-<td align="left">Epinotia</td>
-<td align="left">Epinotia cedricida</td>
-<td align="left">Epinotia cedricida</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">148462596</td>
-<td align="left">Haplodrassus lyndae Bosmans &amp; Kherbouche-Abrous &amp; Benhalima &amp; Hervé 2018</td>
-<td align="left">62552028-dd96-4a85-bd83-5e86bd957be4</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus lyndae</td>
-<td align="left">Haplodrassus lyndae</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">9934744</td>
-<td align="left">Haplodrassus lyndae Abrous &amp; Bosmans, 2018</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus lyndae</td>
-<td align="left">Haplodrassus lyndae</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">148462590</td>
-<td align="left">Haplodrassus crassipes Lucas 1846</td>
-<td align="left">62552028-dd96-4a85-bd83-5e86bd957be4</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus crassipes</td>
-<td align="left">Haplodrassus crassipes</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">9912759</td>
-<td align="left">Haplodrassus crassipes (Lucas, 1846)</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus crassipes</td>
-<td align="left">Haplodrassus crassipes</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">177315937</td>
-<td align="left">Marolia grandis Peyerimhoff 1917</td>
-<td align="left">8e1ed74c-78bc-4ef3-bb36-959bdee75f30</td>
-<td align="left">Marolia</td>
-<td align="left">Marolia grandis</td>
-<td align="left">Marolia grandis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">6989412</td>
-<td align="left">Marolia grandis Peyerimhoff, 1917</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Marolia</td>
-<td align="left">Marolia grandis</td>
-<td align="left">Marolia grandis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">2143966</td>
-<td align="left">Clubiona leucaspis Simon, 1932</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Porrhoclubiona</td>
-<td align="left">Porrhoclubiona leucaspis</td>
-<td align="left">Clubiona leucaspis</td>
-<td align="left">HETEROTYPIC_SYNONYM</td>
-<td align="right">0</td>
-<td align="left">TRUE</td>
-</tr>
-<tr class="odd">
-<td align="right">137467732</td>
-<td align="left">Clubiona leucaspis Simon 1932</td>
-<td align="left">2b205d1c-1ad3-45f3-84a4-d29cef31c5e4</td>
-<td align="left">Clubiona</td>
-<td align="left">Clubiona leucaspis</td>
-<td align="left">Clubiona leucaspis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">165198119</td>
-<td align="left">Traumatocampa bonjeani (Powell, 1922)</td>
-<td align="left">16c3f9cb-4b19-4553-ac8e-ebb90003aa02</td>
-<td align="left">Traumatocampa</td>
-<td align="left">Traumatocampa bonjeani</td>
-<td align="left">Traumatocampa bonjeani</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">165195420</td>
-<td align="left">Cedrus libani subsp. brevifolia (Hook.f.)</td>
-<td align="left">16c3f9cb-4b19-4553-ac8e-ebb90003aa02</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus libani brevifolia</td>
-<td align="left">Cedrus libani brevifolia</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">10063252</td>
-<td align="left">Haplodrassus rufipes (Lucas, 1846)</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus rufipes</td>
-<td align="left">Haplodrassus rufipes</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">148462572</td>
-<td align="left">Haplodrassus rufipes Lucas 1846</td>
-<td align="left">62552028-dd96-4a85-bd83-5e86bd957be4</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus rufipes</td>
-<td align="left">Haplodrassus rufipes</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">100412765</td>
-<td align="left">Abies numidica De Lannoy ex Carrière</td>
-<td align="left">16c3f9cb-4b19-4553-ac8e-ebb90003aa02</td>
-<td align="left">Abies</td>
-<td align="left">Abies numidica</td>
-<td align="left">Abies numidica</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">127853487</td>
-<td align="left">Stephanopachys quadricollis Marseul 1878</td>
-<td align="left">fafab361-6e38-4ace-ac2a-f82b0010eb65</td>
-<td align="left">Stephanopachys</td>
-<td align="left">Stephanopachys quadricollis</td>
-<td align="left">Stephanopachys quadricollis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">148462592</td>
-<td align="left">Haplodrassus omissus Bosmans &amp; Kherbouche-Abrous &amp; Benhalima &amp; Hervé 2018</td>
-<td align="left">62552028-dd96-4a85-bd83-5e86bd957be4</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus omissus</td>
-<td align="left">Haplodrassus omissus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">4427606</td>
-<td align="left">Stephanopachys quadricollis (Fairmaire, 1878)</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Stephanopachys</td>
-<td align="left">Stephanopachys quadricollis</td>
-<td align="left">Stephanopachys quadricollis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">4660194</td>
-<td align="left">Haplodrassus omissus (O.Pickard-Cambridge, 1872)</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus omissus</td>
-<td align="left">Haplodrassus omissus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">8643045</td>
-<td align="left">Paravulvus moroccanus Gilarte, Carreira &amp; Peña-Santiago, 2013</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Paravulvus</td>
-<td align="left">Paravulvus moroccanus</td>
-<td align="left">Paravulvus moroccanus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">119582190</td>
-<td align="left">Paravulvus moroccanus</td>
-<td align="left">416e5501-5064-4dd5-8c6a-ca7117a1072a</td>
-<td align="left">Paravulvus</td>
-<td align="left">Paravulvus moroccanus</td>
-<td align="left">Paravulvus moroccanus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">152030565</td>
-<td align="left">Hybrizon buccatus de Brebisson 1825</td>
-<td align="left">f7d434c4-65d0-40ab-adc9-06bb079a2d8f</td>
-<td align="left">Hybrizon</td>
-<td align="left">Hybrizon buccatus</td>
-<td align="left">Hybrizon buccatus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">148462575</td>
-<td align="left">Haplodrassus securifer Bosmans &amp; Kherbouche-Abrous &amp; Benhalima &amp; Hervé 2018</td>
-<td align="left">62552028-dd96-4a85-bd83-5e86bd957be4</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus securifer</td>
-<td align="left">Haplodrassus securifer</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">5167564</td>
-<td align="left">Chthonius jonicus Beier, 1931</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Chthonius</td>
-<td align="left">Chthonius jonicus</td>
-<td align="left">Chthonius jonicus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">183613343</td>
-<td align="left">Chthonius (Neochthonius) jonicus Beier 1931</td>
-<td align="left">b7f231a2-b766-4f47-914c-c7d39518641f</td>
-<td align="left">Chthonius</td>
-<td align="left">Chthonius jonicus</td>
-<td align="left">Chthonius jonicus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">183550843</td>
-<td align="left">Chthonius (Neochthonius) jonicus Beier 1931</td>
-<td align="left">c6cbde00-e2f0-47f6-bb5a-912843ace312</td>
-<td align="left">Chthonius</td>
-<td align="left">Chthonius jonicus</td>
-<td align="left">Chthonius jonicus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">10329298</td>
-<td align="left">Haplodrassus securifer Bosmans &amp; Abrous, 2018</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Haplodrassus</td>
-<td align="left">Haplodrassus securifer</td>
-<td align="left">Haplodrassus securifer</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">157137036</td>
-<td align="left">Typhlodromus (Anthoseius) ilicis Athias-Henriot 1960</td>
-<td align="left">943ac4e5-eee2-409e-a058-eb76866f102a</td>
-<td align="left">Typhlodromus</td>
-<td align="left">Typhlodromus ilicis</td>
-<td align="left">Typhlodromus ilicis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">100324356</td>
-<td align="left">Paralepistopsis amoenolens (Malençon) Vizzini</td>
-<td align="left">16c3f9cb-4b19-4553-ac8e-ebb90003aa02</td>
-<td align="left">Paralepistopsis</td>
-<td align="left">Paralepistopsis amoenolens</td>
-<td align="left">Paralepistopsis amoenolens</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">10732167</td>
-<td align="left">Poa magellensis F.Conti &amp; Bartolucci, 2020</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Poa</td>
-<td align="left">Poa magellensis</td>
-<td align="left">Poa magellensis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">2186922</td>
-<td align="left">Typhlodromus ilicis Athias-Henriot, 1960</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Typhlodromus</td>
-<td align="left">Typhlodromus ilicis</td>
-<td align="left">Typhlodromus ilicis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">163433685</td>
-<td align="left">Poa magellensis F. Conti &amp; Bartolucci 2020</td>
-<td align="left">88a4906a-1bb7-43cb-912b-d2f0d3fc7f18</td>
-<td align="left">Poa</td>
-<td align="left">Poa magellensis</td>
-<td align="left">Poa magellensis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">100326690</td>
-<td align="left">Pinus halepensis Mill.</td>
-<td align="left">16c3f9cb-4b19-4553-ac8e-ebb90003aa02</td>
-<td align="left">Pinus</td>
-<td align="left">Pinus halepensis</td>
-<td align="left">Pinus halepensis</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">100326634</td>
-<td align="left">Cedrus libani A.Rich.</td>
-<td align="left">16c3f9cb-4b19-4553-ac8e-ebb90003aa02</td>
-<td align="left">Cedrus</td>
-<td align="left">Cedrus libani</td>
-<td align="left">Cedrus libani</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">165536827</td>
-<td align="left">Leucostoma kunzei (Fr.) Munk ex H.Kern</td>
-<td align="left">cbb6498e-8927-405a-916b-576d00a6289b</td>
-<td align="left">Leucostoma</td>
-<td align="left">Leucostoma kunzei</td>
-<td align="left">Leucostoma kunzei</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">190309748</td>
-<td align="left">Genetta genetta genetta</td>
-<td align="left">1b851f83-a5d0-4e03-a1ba-95c846dd3a31</td>
-<td align="left">Genetta</td>
-<td align="left">Genetta genetta genetta</td>
-<td align="left">Genetta genetta genetta</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">1292153</td>
-<td align="left">Hybrizon buccatus (Brebisson, 1825)</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Hybrizon</td>
-<td align="left">Hybrizon buccatus</td>
-<td align="left">Hybrizon buccatus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">119414172</td>
-<td align="left">Dibrachys microgastri Bouché 1834</td>
-<td align="left">75d3dbb3-ef89-4629-bcbb-f6882bba6f0b</td>
-<td align="left">Dibrachys</td>
-<td align="left">Dibrachys microgastri</td>
-<td align="left">Dibrachys microgastri</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">144098725</td>
-<td align="left">Macaca sylvanus (Linnaeus, 1758)</td>
-<td align="left">cbb6498e-8927-405a-916b-576d00a6289b</td>
-<td align="left">Macaca</td>
-<td align="left">Macaca sylvanus</td>
-<td align="left">Macaca sylvanus</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="odd">
-<td align="right">100358872</td>
-<td align="left">Abies pinsapo Boiss.</td>
-<td align="left">16c3f9cb-4b19-4553-ac8e-ebb90003aa02</td>
-<td align="left">Abies</td>
-<td align="left">Abies pinsapo</td>
-<td align="left">Abies pinsapo</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-<tr class="even">
-<td align="right">4501516</td>
-<td align="left">Dibrachys microgastri (Bouché, 1834)</td>
-<td align="left">d7dddbf4-2cf0-4f39-9b2a-bb099caae36c</td>
-<td align="left">Dibrachys</td>
-<td align="left">Dibrachys microgastri</td>
-<td align="left">Dibrachys microgastri</td>
-<td align="left">ACCEPTED</td>
-<td align="right">0</td>
-<td align="left">FALSE</td>
-</tr>
-</tbody>
-</table>
+<pre class="r"><code>head(tax$data) </code></pre>
+<pre><code># A tibble: 6 x 42
+     key scientificName datasetKey  nubKey parentKey parent kingdom phylum genus
+   &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;        &lt;int&gt;     &lt;int&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;
+1 1.46e8 Cedrus atlant~ 3f5e930b-~ 5284702 157137955 Cedrus Plantae Pinop~ Cedr~
+2 1.79e8 Cedrus atlant~ 6b6b2923-~ 5284702 178920103 Cedrus Viridi~ Strep~ Cedr~
+3 1.03e8 Cedrus atlant~ fab88965-~ 5284702 103018872 Cedrus Viridi~ Strep~ Cedr~
+4 1.80e8 Cedrus atlant~ dbaa27eb-~ 5284702 180134102 Cedrus Plantae Trach~ Cedr~
+5 8.07e6 Cedrus atlant~ d7dddbf4-~      NA   2685742 Cedrus Plantae Trach~ Cedr~
+6 1.28e8 Cedrus atlant~ 91bc4859-~ 5284702 131817666 Pinac~ Plantae &lt;NA&gt;   &lt;NA&gt; 
+# ... with 33 more variables: species &lt;chr&gt;, kingdomKey &lt;int&gt;, phylumKey &lt;int&gt;,
+#   classKey &lt;int&gt;, genusKey &lt;int&gt;, speciesKey &lt;int&gt;, canonicalName &lt;chr&gt;,
+#   authorship &lt;chr&gt;, nameType &lt;chr&gt;, taxonomicStatus &lt;chr&gt;, rank &lt;chr&gt;,
+#   origin &lt;chr&gt;, numDescendants &lt;int&gt;, numOccurrences &lt;int&gt;, habitats &lt;chr&gt;,
+#   nomenclaturalStatus &lt;chr&gt;, threatStatuses &lt;chr&gt;, synonym &lt;lgl&gt;,
+#   class &lt;chr&gt;, order &lt;chr&gt;, family &lt;chr&gt;, orderKey &lt;int&gt;, familyKey &lt;int&gt;,
+#   taxonID &lt;chr&gt;, constituentKey &lt;chr&gt;, publishedIn &lt;chr&gt;, ...</code></pre>
 <p>Búsqueda de un género</p>
 <pre class="r"><code>cedrus &lt;- name_lookup(query = &#39;Cedrus&#39;, rank=&quot;genus&quot;)</code></pre>
 <pre><code># A tibble: 67 x 37
@@ -1205,12 +291,12 @@ tax.suggest$data</code></pre>
 1  8074435 Cedrus atlantica SPECIES
 2  5284702 Cedrus atlantica SPECIES
 3 10152153 &lt;NA&gt;             SPECIES</code></pre>
-<pre class="r"><code>key2&lt;-tax.suggest$data$key[2]</code></pre>
+<pre class="r"><code>key2&lt;-tax.suggest$data$key[1]</code></pre>
 <p>La función <em>occ_count</em> permite estimar la cantidad de ocurrencia. Es muy útil en el proceso de diseño de las descargas de GBIF.</p>
 <pre class="r"><code>occ_count(taxonKey=key)</code></pre>
 <pre><code>[1] 6426</code></pre>
 <pre class="r"><code>occ_count(taxonKey=key2)</code></pre>
-<pre><code>[1] 6426</code></pre>
+<pre><code>[1] 110</code></pre>
 </div>
 <div id="búsqueda-y-descarga-de-ocurrencias" class="section level2">
 <h2>3. Búsqueda y descarga de ocurrencias</h2>
@@ -1229,9 +315,9 @@ $endOfRecords
 $count
 [1] 6426</code></pre>
 <pre class="r"><code>dim(cedrus$data)</code></pre>
-<pre><code>[1] 500 119</code></pre>
+<pre><code>[1] 500 123</code></pre>
 <pre class="r"><code>head(cedrus$data, n=10L)</code></pre>
-<pre><code># A tibble: 10 x 119
+<pre><code># A tibble: 10 x 123
    key        scientificName  decimalLatitude decimalLongitude issues datasetKey
    &lt;chr&gt;      &lt;chr&gt;                     &lt;dbl&gt;            &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;     
  1 3447369515 Cedrus atlanti~            48.7            10.1  &quot;cdro~ 6ac3f774-~
@@ -1244,7 +330,7 @@ $count
  8 3031654191 Cedrus atlanti~            48.1            -1.54 &quot;cdro~ 50c9509d-~
  9 3117779404 Cedrus atlanti~            NA              NA    &quot;&quot;     50c9509d-~
 10 3118262413 Cedrus atlanti~            47.0             3.15 &quot;cdro~ 50c9509d-~
-# ... with 113 more variables: publishingOrgKey &lt;chr&gt;, installationKey &lt;chr&gt;,
+# ... with 117 more variables: publishingOrgKey &lt;chr&gt;, installationKey &lt;chr&gt;,
 #   publishingCountry &lt;chr&gt;, protocol &lt;chr&gt;, lastCrawled &lt;chr&gt;,
 #   lastParsed &lt;chr&gt;, crawlId &lt;int&gt;, hostingOrganizationKey &lt;chr&gt;,
 #   basisOfRecord &lt;chr&gt;, occurrenceStatus &lt;chr&gt;, taxonKey &lt;int&gt;,
@@ -1252,7 +338,7 @@ $count
 #   familyKey &lt;int&gt;, genusKey &lt;int&gt;, speciesKey &lt;int&gt;, acceptedTaxonKey &lt;int&gt;,
 #   acceptedScientificName &lt;chr&gt;, kingdom &lt;chr&gt;, phylum &lt;chr&gt;, order &lt;chr&gt;, ...</code></pre>
 <p>En el siguiente enlace puedes consultar una referencia fácil de leer de los términos recomendados actualmente por elGrupo de Mantenimiento de Darwin Core.</p>
-<p>[<a href="https://dwc.tdwg.org/terms/" class="uri">https://dwc.tdwg.org/terms/</a>] <a href="https://dwc.tdwg.org/terms/" class="uri">https://dwc.tdwg.org/terms/</a></p>
+<p><a href="https://dwc.tdwg.org/terms/" class="uri">https://dwc.tdwg.org/terms/</a></p>
 <p>Podemos seleccionar los campos que deseamos descargar</p>
 <pre class="r"><code>campos&lt;-c(&quot;key&quot;,&quot;scientificName&quot;, &quot;decimalLatitude&quot;,&quot;decimalLongitude&quot;, 
           &quot;issues&quot;, &quot;datasetKey&quot;, &quot;basisOfRecord&quot;,&quot;year&quot;)
@@ -1428,7 +514,7 @@ res</code></pre>
   Username: carlos.lara.romero
   E-mail: carlos.lara.romero@gmail.com
   Format: DWCA
-  Download key: 0118966-210914110416597</code></pre>
+  Download key: 0119194-210914110416597</code></pre>
 <p>Con occ_download se trabaja de manera similar a una descarga desde la interfaz web. <em>occ_download</em> envía la solicitud a GBIF, ellos tienen que prepararla primero, luego cuando está hecha puedes descargarla.</p>
 <p>Lo que <em>occ_download</em> devuelve son algunos metadatos útiles que informan sobre la descarga, y nos ayudan a comprobar y saber cuándo se ha realizado la descarga.</p>
 </div>
@@ -1439,10 +525,10 @@ res</code></pre>
 <pre><code>&lt;&lt;gbif download metadata&gt;&gt;
   Status: SUCCEEDED
   Format: DWCA
-  Download key: 0118966-210914110416597
-  Created: 2022-01-31T11:14:06.837+00:00
-  Modified: 2022-01-31T11:15:26.464+00:00
-  Download link: https://api.gbif.org/v1/occurrence/download/request/0118966-210914110416597.zip
+  Download key: 0119194-210914110416597
+  Created: 2022-01-31T16:11:31.922+00:00
+  Modified: 2022-01-31T16:13:06.724+00:00
+  Download link: https://api.gbif.org/v1/occurrence/download/request/0119194-210914110416597.zip
   Total records: 5219
   Request: 
     type:  and
@@ -1466,9 +552,9 @@ dat &lt;- occ_download_get(key=down.key, path=path, overwrite = TRUE)</code></pr
 <p>Usando la función <em>gbif_citation()</em> podemos obtener citas para nuestras descargas. Esta funcón proporciona la citación global y las citas de cada conjunto de datos de manera independiente</p>
 <pre class="r"><code>cit&lt;-gbif_citation(dat)
 cit$download #Citación global</code></pre>
-<pre><code>[1] &quot;GBIF Occurrence Download https://doi.org/10.15468/dl.57zszd Accessed from R via rgbif (https://github.com/ropensci/rgbif) on 2022-01-31&quot;</code></pre>
+<pre><code>[1] &quot;GBIF Occurrence Download https://doi.org/10.15468/dl.rmttnx Accessed from R via rgbif (https://github.com/ropensci/rgbif) on 2022-01-31&quot;</code></pre>
 <pre class="r"><code>length(cit$datasets) #157 conjunto de datos</code></pre>
-<pre><code>[1] 157</code></pre>
+<pre><code>[1] 156</code></pre>
 <pre class="r"><code>cit$datasets [1] #Cita para el primer conjunto de datos</code></pre>
 <pre><code>[[1]]
 &lt;&lt;rgbif citation&gt;&gt;
@@ -1500,17 +586,17 @@ while (still_running) {
   still_running &lt;- status %in% c(&quot;PREPARING&quot;, &quot;RUNNING&quot;)
   Sys.sleep(status_ping) # Suspender ejecución expresiones R durante intervalo de tiempo determinado.
 }</code></pre>
-<pre><code>[1] &quot;RUNNING&quot;
+<pre><code>[1] &quot;PREPARING&quot;
 [1] &quot;RUNNING&quot;
 [1] &quot;SUCCEEDED&quot;</code></pre>
 <pre class="r"><code>occ_download_meta(multiple)</code></pre>
 <pre><code>&lt;&lt;gbif download metadata&gt;&gt;
   Status: SUCCEEDED
   Format: SIMPLE_CSV
-  Download key: 0119131-210914110416597
-  Created: 2022-01-31T14:46:42.235+00:00
-  Modified: 2022-01-31T14:47:26.933+00:00
-  Download link: https://api.gbif.org/v1/occurrence/download/request/0119131-210914110416597.zip
+  Download key: 0119223-210914110416597
+  Created: 2022-01-31T16:35:53.644+00:00
+  Modified: 2022-01-31T16:36:42.547+00:00
+  Download link: https://api.gbif.org/v1/occurrence/download/request/0119223-210914110416597.zip
   Total records: 392
   Request: 
     type:  in
@@ -1563,21 +649,25 @@ dat2[sample(1:nrow(dat2),5),c(&quot;species&quot;,&quot;decimalLatitude&quot;,&q
 <pre><code># A tibble: 5 x 5
   species            decimalLatitude decimalLongitude countryCode issue         
   &lt;chr&gt;                        &lt;dbl&gt;            &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt;         
-1 Abarema auriculata           NA                NA   BR          COLLECTION_MA~
-2 Abarema auriculata           NA                NA   BR          INSTITUTION_M~
-3 Abarema auriculata           NA                NA   BR          DIFFERENT_OWN~
-4 Abarema auriculata           -2.88            -60.0 BR          GEODETIC_DATU~
-5 Abarema auriculata           -0.6             -72.4 CO          INSTITUTION_M~</code></pre>
+1 Abarema abbottii                NA               NA DO          COLLECTION_MA~
+2 Abarema auriculata              NA               NA BR          DIFFERENT_OWN~
+3 Abarema auriculata              NA               NA BR          INSTITUTION_M~
+4 Abarema auriculata              NA               NA BR          RECORDED_DATE~
+5 Abarema auriculata              NA               NA BR          COLLECTION_MA~</code></pre>
 <pre class="r"><code>saveRDS(cit2, paste0(path,&quot;dat2&quot;,&quot;_citation&quot;,&quot;.Rdata&quot;))</code></pre>
 </div>
 </div>
 <div id="conjunto-de-datos-derivados" class="section level2">
 <h2>5. Conjunto de datos derivados</h2>
 <p>GBIF tiene una herramienta para generar conjunto de datos derivados. Un conjunto de datos derivado es un registro citable (con un DOI único) que representa un conjunto de datos que no existe como una descarga convencional y no filtrada de GBIF.org.</p>
-<p>[<a href="https://www.gbif.org/es/derived-dataset" class="uri">https://www.gbif.org/es/derived-dataset</a>]<a href="https://www.gbif.org/es/derived-dataset" class="uri">https://www.gbif.org/es/derived-dataset</a></p>
+<p><a href="https://www.gbif.org/es/derived-dataset%5Dhttps://www.gbif.org/es/derived-dataset" class="uri">https://www.gbif.org/es/derived-dataset]https://www.gbif.org/es/derived-dataset</a></p>
 <p>A través del enalce se accede a la herramienta de GBIF para generar el DOI a la que sólo necesitamos aportar: i) una lista de conjuntos de datos contribuyentes, ii) el recuento de registros de cada conjunto de daots y, en aras de la reproducibilidad, la url del repositorio público en el que se aloja el conjunto de datos derivado (figshare, dryad etc.). Los datos contribuyentes se pueden identificar con el campo datasetKey.</p>
 <p>En resumen, hay que generar un archivo de este tipo:</p>
-<p>datasetKey 1 25 records datasetKey 2 545 records datasetKey 3 200 records</p>
+<ul>
+<li>datasetKey1 25 records</li>
+<li>datasetKey2 545 records</li>
+<li>datasetKey3 200 records</li>
+</ul>
 <p>GBIF recomienda el uso de conjuntos de datos derivados para citar los datos obtenidos mediante llamadas síncronas a la API como las utilizadas por rgbif en occ_data() y occ_search(). Pero aunque se utilice la función occ_download() para generar una única descarga de datos es posible que durante el proceso de limpieza y filtrado se eliminen registros de conjunto de datos completos (datasets). Por ello, es una herramienta muy útil para generar DOIs específicos para nuestros datos que permitan citar exactamente los datos utilizados.</p>
 </div>
 <div id="limpieza-de-datos" class="section level2">
